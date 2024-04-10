@@ -80,6 +80,10 @@ img {
 
 .recipe__image {
     border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
 }
 
 .recipe-content {
@@ -97,6 +101,10 @@ img {
     background-color: var(--rose-white);
     border-radius: 14px;
     padding: 1.4em;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
 }
 
 .preparation__title,
@@ -168,4 +176,32 @@ img {
 .nutrition__value {
     color: var(--nutmeg);
     font-weight: 700;
+}
+
+@media only screen and (max-width: 730px) {
+    .recipe {
+        border-radius: 0;
+        padding: 0;
+        margin: unset;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .recipe__image {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .recipe-content {
+        padding: 2em;
+    }
+
+    .recipe__name {
+        padding-top: 0;
+    }
 }
