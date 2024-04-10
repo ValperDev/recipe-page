@@ -74,7 +74,7 @@ img {
     background-color: var(--white);
     border-radius: 28px;
     padding: 2.5em;
-    margin-inline: auto;
+    margin: 2em auto;
     max-width: 46rem;
 }
 
@@ -82,8 +82,15 @@ img {
     border-radius: 14px;
 }
 
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+}
+
 .recipe__name {
     color: var(--dark-charcoal);
+    padding-top: 1.5em;
 }
 
 .preparation-container {
@@ -137,6 +144,10 @@ img {
     font-weight: 700;
 }
 
+.nutrition__description {
+    padding-bottom: 1em;
+}
+
 .nutrition-table {
     border-collapse: collapse;
     width: 100%;
@@ -148,6 +159,10 @@ img {
 
 .nutrition__item:last-child {
     border-bottom: 0;
+}
+
+.nutrition__element {
+    padding-block: .6em;
 }
 
 .nutrition__value {
